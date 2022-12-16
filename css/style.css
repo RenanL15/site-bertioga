@@ -1,0 +1,999 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+:root {
+  --dark-color: #553802;
+  --light-color: #a75e19;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--light-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+}
+h1 {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header 1 */
+
+.container-header-menu {
+  display: flex;
+  margin-right: 360px;
+}
+
+.container-header-1 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  flex-wrap: wrap;
+}
+
+.container-menu-1 {
+  display: flex;
+  margin: auto;
+}
+
+.container-menu-1 ul {
+  display: flex;
+  background-color: var(--light-color);
+  border-radius: 40px;
+}
+.container-menu-1 a {
+  padding: 12px;
+  display: block;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 150ms ease;
+}
+.container-menu-1 a:hover {
+  background-color: #553802;
+  text-decoration: none;
+}
+
+.container-header-1 li {
+  list-style: none;
+}
+
+.logo-bertioga {
+  margin-right: 80px;
+}
+
+.logo-bertioga-white {
+  display: none;
+  margin-right: 80px;
+}
+
+.container-menu-1 span {
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+  align-self: center;
+}
+.container-menu-coll span {
+  width: 1px;
+  height: 20px;
+  background-color: #000;
+  align-self: center;
+}
+
+.menu-link {
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.container-menu-1 .cadastrar {
+  font-size: 20px;
+  color: #5a3606;
+  list-style: none;
+  text-decoration: none;
+  margin: 8px;
+  background-color: #ffede0;
+  border-radius: 20px;
+  transition: all 200ms ease;
+}
+.container-menu-1 .cadastrar:hover {
+  text-decoration: none;
+  color: #ffede0;
+  background-color: #5a3606;
+  border-radius: 20px;
+}
+
+.header-button {
+  display: none;
+  border: none;
+  margin-top: 100px;
+  margin-right: 90%;
+  position: absolute;
+}
+
+.menu-link-coll {
+  font-size: 20px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.empty1 {
+  width: 150px;
+}
+
+/* Header 2 */
+
+.container-header-2 {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-menu-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.container-menu-2 ul {
+  display: flex;
+}
+
+.container-menu-2 li {
+  list-style: none;
+}
+.container-menu-2 a {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 20px;
+  transition: all 200ms ease;
+}
+.container-menu-2 a:hover {
+  background-color: #fff;
+  color: var(--dark-color);
+}
+
+.container-menu-coll {
+  display: none;
+}
+.container-menu-2-coll {
+  display: none;
+}
+.container-menu-2 span {
+  width: 1px;
+  height: 20px;
+  background-color: #000;
+  align-self: center;
+}
+.container-header-2 span {
+  background-color: #fff;
+}
+
+/* Body */
+
+.pagina {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.main-noticias {
+  width: 1170px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-noticias article {
+  width: 350px;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.main-noticias img {
+  width: 350px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.main-noticias img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 0px 3px var(--dark-color);
+}
+
+.main-noticias a {
+  color: #000;
+  text-decoration: none;
+}
+
+.main-noticias a:hover {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+.saude-pag .main-noticias a:hover {
+  color: #0772a3;
+  text-decoration: none;
+}
+.saude-pag .main-noticias img {
+  width: 350px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.saude-pag .main-noticias img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 0px 3px #0772a3;
+}
+
+.main-noticias p {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sub-pag h1 {
+  text-align: center;
+  color: var(--dark-color);
+  font-size: 24px;
+}
+
+.agenda {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin-left: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.agenda h1 {
+  margin-bottom: -30px;
+  color: var(--dark-color);
+  font-size: 22px;
+}
+
+.agenda p {
+  margin-top: 50px;
+  color: #4e4e4e;
+}
+
+.agenda strong {
+  color: var(--light-color);
+}
+
+.agenda-2 {
+  display: none;
+}
+
+.agenda-2 h1 {
+  margin-bottom: -30px;
+  color: var(--dark-color);
+  font-size: 22px;
+}
+
+.agenda-2 p {
+  margin-top: 50px;
+  color: var(--dark-color);
+}
+
+.agenda-2 strong {
+  color: var(--dark-color);
+}
+
+section {
+  text-align: center;
+}
+
+.educacao {
+  display: flex;
+  background-color: #daa023;
+  padding: 50px;
+  justify-content: center;
+}
+.educacao img {
+  border: 3px solid var(--dark-color);
+  border-radius: 20px;
+  transition: all 300ms ease;
+}
+.educacao img:hover {
+  transform: scale(1.05);
+}
+.educacao a {
+  color: rgb(49, 6, 6);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  width: 370px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#edu-title {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #794e16;
+  margin-top: 40px;
+  background-color: #be8a1a;
+}
+
+.saude-pag {
+  color: #08628b;
+}
+
+.saude-aside {
+  display: flex;
+  align-items: center;
+  width: 430px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin-left: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.saude-aside h1 {
+  text-align: center;
+  background-color: #08628b;
+  border-radius: 100px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.saude-aside p {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  color: #4e4e4e;
+}
+
+.saude-aside strong {
+  color: #0769aa;
+}
+
+.saude-aside-2 {
+  display: none;
+}
+
+.saude-aside-2 h1 {
+  text-align: center;
+  background-color: rgb(8, 98, 139);
+  border-radius: 100px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.saude-aside-2 p {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  color: #4e4e4e;
+}
+
+.saude-aside-2 strong {
+  display: flex;
+  align-items: center;
+  color: #0769aa;
+}
+
+/* Contato */
+
+.main-contato {
+  border-top: 6px solid var(--dark-color);
+  border-bottom: 6px solid var(--dark-color);
+  background-image: url("../images/Vista-aerea-de-Riviera-de-Sao-Lourenco-Bertioga-Sao-Paulo-shutterstock_1926264416.jpg");
+  background-size: cover;
+}
+
+.contato-section {
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+  width: 800px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.116);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contato-section h1 {
+  text-align: center;
+  background-color: #8b6208;
+  border-radius: 100px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contato-section p {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  color: #4e4e4e;
+}
+
+.contato-section strong {
+  color: #0769aa;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px;
+}
+
+.footer h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: #ebebeb;
+}
+
+.footer section {
+  margin-left: 100px;
+}
+
+.footer-endereco {
+  text-align: center;
+}
+
+.footer-redes ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
+}
+
+.footer-redes li {
+  padding: 10px;
+}
+
+.footer-redes h1 {
+  margin-bottom: 10px;
+}
+
+.redes {
+  margin: auto;
+}
+
+.footer-redes img {
+  margin-right: 10px;
+}
+
+.footer-redes a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 200ms ease;
+}
+
+.footer-redes a:hover {
+  color: #000;
+  background-color: #c78a07;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.2);
+}
+
+.endereco {
+  width: 266px;
+}
+
+.horario {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #edecec;
+}
+
+.footer-contato {
+  line-height: 25px;
+}
+
+.fale-conosco {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  width: 200px;
+}
+
+.fale-conosco h1 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.footer-contato p {
+  color: #ffc118;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Carrossel */
+
+.carousel-inner h3 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #222;
+  color: #FFF;
+}
+.carousel-inner p {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FFF;
+  color: #222;
+}
+
+/* Cadastro */
+
+.bg-image {
+  background-image: url("../images/Vista-aerea-de-Riviera-de-Sao-Lourenco-Bertioga-Sao-Paulo-shutterstock_1926264416.jpg");
+  background-size: cover;
+  border-top: 8px solid var(--dark-color);
+  border-bottom: 8px solid var(--dark-color);
+}
+
+.card {
+  background-color: var(--dark-color);
+  font-weight: bold;
+  color: #f7c05c;
+}
+.form-control {
+  background-color: #fff8eb;
+  border-radius: 20px;
+}
+/* .card-registration .select-arrow {
+  top: 13px;
+} */
+.btn-cadastro {
+  background-color: #f7c05c;
+  font-weight: bold;
+}
+.btn-cadastro:hover {
+  background-color: #ffe4b2;
+}
+
+.link-cadastro {
+  background-color: #b39350;
+}
+
+/* Dark Mode */
+
+body.dark {
+  background-color: #181A1B;
+  color: #CDC8C2 !important;
+}
+
+/* Responsivo */
+
+@media (max-width: 1600px) {
+  .main-noticias img {
+    width: 100%;
+  }
+  .saude-aside {
+    margin: 0;
+    max-height: 1200px;
+  }
+  .agenda {
+    margin: 0;
+    max-height: 1200px;
+  }
+  .educacao img {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .main-noticias article {
+    width: 350px;
+  }
+  .main-noticias img {
+    width: 300px;
+  }
+  .main-noticias {
+    width: 800px;
+  }
+  .educacao img {
+    width: 200px;
+    height: 130px;
+  }
+  .menu-link {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .container-header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .logo-bertioga {
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+  }
+
+  .container-header-1 {
+    height: 160px;
+  }
+
+  .container-menu-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sub-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-endereco {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .footer-contato {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .footer-redes {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .footer-redes h1 {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .main-noticias {
+    width: auto;
+    text-align: auto;
+  }
+  .main-noticias img,
+  .main-noticias p {
+    width: 100%;
+    margin: auto;
+  }
+  .main-noticias article {
+    width: 100%;
+  }
+
+  .educacao {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .educacao img,
+  .educacao a {
+    width: 90%;
+    height: 90%;
+  }
+  .educacao a {
+    padding: 20px;
+  }
+  .saude-aside {
+    width: auto;
+    max-height: 100%;
+  }
+  .agenda {
+    width: auto;
+    max-height: 100%;
+  }
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-endereco {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer-contato {
+    margin-top: 50px;
+  }
+  .footer-redes {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-noticias {
+    width: auto;
+    text-align: auto;
+  }
+  .main-noticias img,
+  .main-noticias p {
+    width: 100%;
+    margin: auto;
+  }
+  .main-noticias article {
+    width: 100%;
+  }
+  .educacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .educacao img {
+    width: 300px;
+    height: 200px;
+  }
+  .educacao a {
+    width: 300px;
+  }
+  .saude-aside {
+    display: none;
+  }
+
+  .saude-aside-2 {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .menu-link-coll {
+    margin-bottom: 20px;
+  }
+  .container-header-1 {
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .container-header-1 {
+    height: 160px;
+  }
+
+  .container-menu-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .agenda {
+    display: none;
+  }
+  .agenda-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .saude-aside {
+    display: none;
+  }
+  .saude-aside-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .sub-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-endereco {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .footer-contato {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .footer-redes {
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 820px) {
+  .contato-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .container-header-1 {
+    background-color: var(--dark-color);
+  }
+  .logo-bertioga {
+    display: none;
+    margin-right: 80px;
+  }
+  .logo-bertioga-white {
+    display: block;
+    margin-right: 10px;
+  }
+  .main-noticias img {
+    width: 100%;
+  }
+  .menu-link-coll {
+    margin-bottom: 20px;
+  }
+  .container-header-1 {
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .container-header-2 {
+    display: none;
+  }
+
+  .container-menu-1 span,
+  .container-menu-2 span {
+    display: none;
+  }
+
+  .header-button {
+    display: flex;
+  }
+  .container-menu-1 {
+    display: none;
+  }
+
+  .container-menu-coll {
+    display: none;
+    padding: 0;
+    background-color: var(--dark-color);
+  }
+
+  .container-menu-2-coll {
+    display: none;
+    padding: 0;
+    background-color: #8b5c04;
+  }
+  .container-menu-coll a {
+    padding: 15px;
+    display: block;
+    margin: 0;
+    color: #fff;
+  }
+  .container-menu-coll a:hover {
+    text-decoration: none;
+  }
+  .container-menu-2-coll a {
+    padding: 15px;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+  }
+  .container-menu-coll a:hover {
+    background-color: #fff;
+    color: var(--dark-color);
+  }
+  .container-menu-2-coll a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--light-color);
+  }
+
+  .container-menu-coll.active {
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-menu-2-coll.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-inner h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #222;
+    color: #FFF;
+  }
+  .carousel-inner p {
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFF;
+    color: #222;
+  }
+  .agenda {
+    display: none;
+  }
+
+  .agenda-2 {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 10px -3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-endereco {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer-contato {
+    margin-top: 50px;
+  }
+  .footer-redes {
+    margin-top: 50px;
+  }
+}
